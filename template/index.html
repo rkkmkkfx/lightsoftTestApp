@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> type="text/css" >
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/53f39c7df3.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet/less" href="assets/css/style.less">
@@ -18,7 +18,7 @@
     <header>
         <div class="container">
             <nav class="navbar navbar-toggleable-md">
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
                 <a class="navbar-brand" href=""><img src="images/logo.png" alt="MyTour"></a>
                 <div class="collapse navbar-collapse" id="main">
                     <ul class="navbar-nav mr-auto">
@@ -36,7 +36,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="content col-xs-12 col-md-10">
-                    <h1>Настройки интересов</h1>
+                    <h2>Настройки интересов</h2>
                     <article class="tour-form">
                         <header class="form-header d-flex align-items-center">
                             <ul class="nav nav-tabs" role="tablist">
@@ -48,7 +48,36 @@
                             <a href="" class="text-uppercase"><i class="fa fa-plus-circle"></i>&nbsp;Добавить подборку</a>
                         </header>
                         <main class="form-content">
+                            <form>
+                                <div class="row align-items-end">
+                                    <div class="form-group col-xs-12 col-md-3">
+                                        <label for="name">Название подборки</label>
+                                        <input type="email" class="form-control" id="name" aria-describedby="name" placeholder="">
+                                    </div>
+                                    <div class="form-group col-xs-12 col-md-3">
+                                        <label for="city">Ваш город</label>
+                                        <input type="text" class="form-control" id="city" aria-describedby="city" placeholder="">
+                                    </div>
+                                    <div class="form-group col-xs-12 col-md-6 text-right">
+                                        <a href="" class="btn btn-action btn-lg text-uppercase">Смотреть результаты&emsp;<i class="fa fa-arrow-circle-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-xs-12 col-md-12">
+                                        <label for="tags">Вы можете задать несколько стран или регионов для одной подборки</label>
+                                        <input type="text" class="form-control tags" id="tags">
+                                    </div>
+                                    <div class="form-group col-xs-12 col-md-12">
+                                        <a href="" class="btn btn-rounded text-uppercase">добавить регион</a>
+                                        <a href="" class="btn btn-rounded-inverted text-uppercase">добавить регион</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
 
+                                    </div>
+                                </div>
+                            </form>
                         </main>
                     </article>
                 </div>

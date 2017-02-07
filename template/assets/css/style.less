@@ -32,6 +32,35 @@ body {
         }
     }
 }
+.btn-action {
+    background: #ff8e41;
+    border: 2px solid #ff8e41;
+    color: #fff;
+    &:hover {
+        background: #fff;
+        color: #ff7313;
+    }
+}
+.btn-rounded {
+    border-radius: 50px;
+    border: 2px solid #2d9cdb;
+    background: #2d9cdb;
+    color: #fff;
+    &:hover {
+        background: #fff;
+        color: #2d9cdb;
+    }
+}
+.btn-rounded-inverted {
+    border-radius: 50px;
+    border: 2px solid #2d9cdb;
+    background: #fff;
+    color: #2d9cdb;
+    &:hover {
+        background: #2d9cdb;
+        color: #fff;
+    }
+}
 
 header {
     background: #008bd4;
@@ -69,33 +98,55 @@ main {
             padding: 0;
             .nav-tabs {
                 border: none;
-                .nav-link {
-                    border: none;
-                    padding: 1em 1.4em;
-                    text-transform: uppercase;
-                    font-size: 15px;
-                    color: #bdbdbd;
-                    &:hover,
-                    &.active {
-                        color: #2d9cdb;
-                        position: relative;
-                        box-sizing: padding-box;
-                        &::before {
-                            content: ' ';
-                            width: 78%;
-                            height: 2px;
-                            position: absolute;
-                            display: block;
-                            left: ~"calc(18% - 0.8em)";
-                            bottom: 0;
-                            background: #2d9cdb;
+                .nav-item {
+                    margin-bottom: 0;
+                    .nav-link {
+                        border: none;
+                        padding: 1em 1.4em;
+                        text-transform: uppercase;
+                        font-size: 15px;
+                        color: #bdbdbd;
+                        &:hover,
+                        &.active {
+                            color: #2d9cdb;
+                            position: relative;
+                            border-bottom: none;
+                            &::before {
+                                content: ' ';
+                                width: 78%;
+                                height: 2px;
+                                position: absolute;
+                                display: block;
+                                left: ~"calc(18% - 0.8em)";
+                                bottom: 0;
+                                background: #2d9cdb;
+                            }
                         }
                     }
                 }
             }
         }
         .form-content {
-
+            padding: 0 20px;
+            border-top: 1px solid #e0e0e0;
+            form {
+                .row {
+                    .form-group {
+                        padding-top: 1em;
+                        padding-bottom: 1em;
+                        label {
+                            font-size: 12px;
+                            color: #bdbdbd;
+                        }
+                        .form-control {
+                            padding: .8rem;
+                            &.tags {
+                                min-width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
