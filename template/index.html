@@ -1,33 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>LightSoft test app</title>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> type="text/css" >
+    <script src="https://use.fontawesome.com/53f39c7df3.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet/less" href="assets/css/style.less">
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
 </head>
+
 <body>
     <header>
         <div class="container">
-            <div class="row top-xs middle-md">
-                <div class="logo col-xs-12 col-md-2 col-lg-1"><img src="images/logo.png" alt="MyTour"></div>
-                <nav class="col-xs-12 col-md-9">
-                    <ul class="row navbar">
-                        <li><a href="" class="btn btn-link">Моя лента</a></li>
-                        <li class="active"><a href="" class="btn btn-link">Интересы</a></li>
-                        <li><a href="" class="btn btn-link">Направления</a></li>
-                        <li><a href="" class="btn btn-link">Подбор тура</a></li>
-                        <li><a href="" class="btn btn-link">Заявка</a></li>
+            <nav class="navbar navbar-toggleable-md">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                <a class="navbar-brand" href=""><img src="images/logo.png" alt="MyTour"></a>
+                <div class="collapse navbar-collapse" id="main">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Моя лента</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#">Интересы</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Направления</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Подбор тура</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Заявка</a></li>
                     </ul>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </div>
     </header>
     <main>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="content col-xs-12 col-md-10">
+                    <h1>Настройки интересов</h1>
+                    <article class="tour-form">
+                        <header class="form-header d-flex align-items-center">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#home" role="tab">Подборка Васи</a></li>
+                                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#profile" role="tab">Подборка 123</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#messages" role="tab">Турция 20.03</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#settings" role="tab">Подборка #1</a></li>
+                            </ul>
+                            <a href="" class="text-uppercase"><i class="fa fa-plus-circle"></i>&nbsp;Добавить подборку</a>
+                        </header>
+                        <main class="form-content">
 
+                        </main>
+                    </article>
+                </div>
+            </div>
+        </div>
     </main>
     <footer></footer>
 </body>
+
 </html>

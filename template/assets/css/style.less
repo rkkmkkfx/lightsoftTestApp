@@ -9,21 +9,25 @@ body {
     font-family: 'Open Sans',sans-serif;
     background-color: #f2f2f2;
 }
-.btn {
-    padding: 10px 20px;
-    &.btn-link {
-        text-decoration: none;
-        &:hover {
-            position: relative;
-            &::before {
-                content: ' ';
-                display: block;
-                position: absolute;
-                width: 66%;
-                height: 2px;
-                left: 17%;
-                background: #fff;
-                bottom: 0;
+.navbar-toggleable-md {
+    .navbar-nav {
+        .nav-link {
+            padding-left: 20px;
+            padding-right: 20px;
+            text-decoration: none;
+            &:hover {
+                position: relative;
+                color: #fff;
+                &::before {
+                    content: ' ';
+                    display: block;
+                    position: absolute;
+                    width: 66%;
+                    height: 2px;
+                    left: 17%;
+                    background: #fff;
+                    bottom: 0;
+                }
             }
         }
     }
@@ -34,21 +38,64 @@ header {
     background: -webkit-linear-gradient(left,  #008bd4 0%,#006bc5 100%);
     background: linear-gradient(to right,  #008bd4 0%,#006bc5 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008bd4', endColorstr='#006bc5',GradientType=1 );
+    padding: 10px 0;
     .container {
         min-height: 49px;
     }
     nav {
-        li {
-            list-style-type: none;
-            font-family: 'Open Sans Condensed',sans-serif;
-            a {
-                color: #fff;
-            }
-            &.active {
+        ul {
+            padding: 0;
+            li {
+                list-style-type: none;
+                font-family: 'Open Sans Condensed',sans-serif;
                 a {
-                    font-weight: bold;
+                    color: #fff;
+                }
+                &.active {
+                    a {
+                        font-weight: bold;
+                    }
                 }
             }
+        }
+    }
+}
+
+main {
+    .tour-form {
+        background: #fff;
+        .form-header {
+            background: transparent;
+            padding: 0;
+            .nav-tabs {
+                border: none;
+                .nav-link {
+                    border: none;
+                    padding: 1em 1.4em;
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    color: #bdbdbd;
+                    &:hover,
+                    &.active {
+                        color: #2d9cdb;
+                        position: relative;
+                        box-sizing: padding-box;
+                        &::before {
+                            content: ' ';
+                            width: 78%;
+                            height: 2px;
+                            position: absolute;
+                            display: block;
+                            left: ~"calc(18% - 0.8em)";
+                            bottom: 0;
+                            background: #2d9cdb;
+                        }
+                    }
+                }
+            }
+        }
+        .form-content {
+
         }
     }
 }
