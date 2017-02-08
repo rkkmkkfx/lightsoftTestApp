@@ -12,6 +12,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet/less" href="assets/css/style.less">
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
+    <link href="assets/css/datepicker.min.css" rel="stylesheet" type="text/css">
+    <script src="assets/js/datepicker.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </head>
 
 <body>
@@ -68,13 +71,49 @@
                                         <input type="text" class="form-control tags" id="tags">
                                     </div>
                                     <div class="form-group col-xs-12 col-md-12">
-                                        <a href="" class="btn btn-rounded text-uppercase">добавить регион</a>
                                         <a href="" class="btn btn-rounded-inverted text-uppercase">добавить регион</a>
+                                        <a href="" class="btn btn-rounded text-uppercase">добавить страны</a>
                                     </div>
                                 </div>
-                                <div class="row">
+                                <div class="row input-split">
                                     <div class="form-group">
-
+                                        <label for="dates">Дата вылета</label>
+                                        <input type="text" class="form-control datepicker-here" id="dates" data-range="true" data-multiple-dates-separator=" - " data-date-format = "d MM, D">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="duration">На сколько</label>
+                                        <input type="text" class="form-control" id="duration">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="numberOfPersons">Количество гостей</label>
+                                        <input type="text" class="form-control" id="numberOfPersons">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="price">Стоимость тура</label>
+                                        <input type="text" class="form-control" id="price">
+                                    </div>
+                                </div>
+                                <div class="row align-items-end">
+                                    <div class="col-md-8 d-flex">
+                                        <div class="form-group">
+                                            <label for="stars">Категория отелей от</label>
+                                            <input type="text" class="form-control" id="stars" data-range="true" data-multiple-dates-separator=" - " data-date-format = "d MM, D">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="tophotels">Рейтинг TopHotels</label>
+                                            <input type="text" class="form-control" id="tophotels">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="food">Тип питания</label>
+                                            <input type="text" class="form-control" id="food">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="place">Расположение</label>
+                                            <input type="text" class="form-control" id="place">
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <a href="" class="btn btn-link btn-lg text-uppercase text-danger"><i class="fa fa-times-circle"></i>&nbsp;удалить подборку</a>
                                     </div>
                                 </div>
                             </form>
